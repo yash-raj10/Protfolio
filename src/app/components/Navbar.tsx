@@ -7,7 +7,7 @@ type Props = {};
 export default function Navbar({}: Props) {
   return (
     <div>
-      <header className=" sticky top-0 flex flex-row items-start justify-between ">
+      <header className=" bg-violet-200 sticky top-0 flex flex-row items-start justify-between ">
         <motion.div
           initial={{ x: -300, opacity: 0, scale: 0.5 }}
           animate={{ x: 0, opacity: 1, scale: 1 }}

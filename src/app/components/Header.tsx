@@ -19,19 +19,44 @@ export default function Header({}: Props) {
         initial={{ x: +40, opacity: 0, scale: 1 }}
         animate={{ x: 0, opacity: 1, scale: 1 }}
         transition={{ duration: 1 }}
-        className=" h-44 w-40 bg-violet-600 rounded-3xl shadow-lg shadow-violet-500 flex items-center justify-center"
+        className=" h-56 w-52 bg-violet-600 rounded-3xl shadow-lg shadow-violet-500 flex items-center justify-center"
       >
-        <img src="/yash.jpg" alt="Yash" width={140} className=" rounded-3xl" />
+        <img
+          src="/yash.jpg"
+          alt="Yash"
+          width={175}
+          className=" rounded-3xl  hover:scale-105 duration-300"
+        />
       </motion.div>
       <h1>
         Hey, I Am YA.sh <span className=" text-violet-700">{text}</span>
         <Cursor cursorColor="darkviolet" />
       </h1>
-      <div className=" space-x-8 pt-6 text-gray-700">
-        <Link href="#about">HOME</Link>
-        <Link href="#skills">SKILLS</Link>
-        <Link href="#projects">PROJECTS</Link>
-        <Link href="#blogs">BLOGS</Link>
+      <div className=" space-x-12 pt-6 text-gray-700">
+        <Link
+          href="#about"
+          className="hover:border-2 rounded-3xl hover:border-violet-600 px-[6px] hover:opacity-100 opacity-80 "
+        >
+          HOME
+        </Link>
+        <Link
+          href="#skills"
+          className="hover:border-2 rounded-3xl hover:border-violet-600 px-[6px] hover:opacity-100 opacity-80"
+        >
+          TOOLS
+        </Link>
+        <Link
+          href="#projects"
+          className="hover:border-2 rounded-3xl hover:border-violet-600 px-[6px]  hover:opacity-100 opacity-80"
+        >
+          PROJECTS
+        </Link>
+        <Link
+          href="#blogs"
+          className="hover:border-2 rounded-3xl hover:border-violet-600 px-[6px] hover:opacity-100 opacity-80 "
+        >
+          BLOGS
+        </Link>
       </div>
     </div>
   );

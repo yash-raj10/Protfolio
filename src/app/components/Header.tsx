@@ -32,7 +32,7 @@ export default function Header({}: Props) {
         Hey, I Am YA.sh <span className=" text-violet-700">{text}</span>
         <Cursor cursorColor="darkviolet" />
       </h1>
-      <div className=" space-x-12 pt-6 text-gray-700">
+      <div className=" space-x-4 pt-6 text-gray-700 sm:space-x-12  ">
         <Link
           href="#about"
           className="hover:border-2 rounded-3xl hover:border-violet-600 px-[6px] hover:opacity-100 opacity-80 "

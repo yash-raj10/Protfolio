@@ -6,7 +6,7 @@ type Props = {};
 
 export default function About({}: Props) {
   return (
-    <div className="h-screen overflow-hidden my flex flex-col lg:flex-row text-centre lg:p-32 justify-center items-center ">
+    <div className="h-screen overflow-hidden flex flex-col lg:flex-row text-centre lg:p-32 justify-center items-center ">
       <motion.img
         initial={{ x: -200, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}

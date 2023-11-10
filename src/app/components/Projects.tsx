@@ -23,10 +23,6 @@ export default function Projects({}: Props) {
               latest advancements in the tech world. 👨‍💻 Currently Learning Cloud
               and Devops. I'm also the Outreach Lead at @GdscBpit and a proud
               contributor to @cncfnd and @rustDelhi Communities. I enjoy
-              mentoring and collaborating with fellow tech enthusiasts to create
-              a vibrant and innovative community.🚀 In a world powered by code,
-              I find my sanctuary in Linux, where every command and line of code
-              carries the potential to shape the digital realm.⚡
             </p>
           </div>
         ))}

@@ -37,7 +37,7 @@ export default function Header({}: Props) {
           href="#about"
           className="hover:border-2 rounded-3xl hover:border-violet-600 px-[6px] hover:opacity-100 opacity-80 "
         >
-          HOME
+          ABOUT
         </Link>
         <Link
           href="#skills"

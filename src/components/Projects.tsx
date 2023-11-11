@@ -20,7 +20,7 @@ export default function Projects({}: Props) {
               </h3>
               <a href="https://github.com/yash-raj10">
                 {" "}
-                <button className=" border-2 hover:bg-violet-400 px-[10px] rounded-lg border-violet-600">
+                <button className=" border-2 hover:bg-violet-400 px-[10px] text-gray-700 rounded-lg border-violet-600">
                   View Code
                 </button>
               </a>

@@ -2,9 +2,11 @@
 import React from "react";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
+import { usePathname } from "next/navigation";
 type Props = {};
 
 export default function Navbar({}: Props) {
+  const pathname = usePathname();
   return (
     <div className=" bg-violet-200 sticky top-0 flex flex-row items-start justify-between z-50">
       <motion.div
@@ -39,13 +41,14 @@ export default function Navbar({}: Props) {
         transition={{ duration: 1 }}
         className=" flex flex-row items-center "
       >
-        <SocialIcon
+        {/* <SocialIcon
+          href="#contact"
           className=" cursor-pointer"
           network="email"
           fgColor="darkviolet"
           bgColor=" transparent"
-        />
-        <a href="/blogs" className="px-2">
+        /> */}
+        {pathname !== "/" && (
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -55,12 +58,28 @@ export default function Navbar({}: Props) {
           >
             <path
               fill=" darkviolet"
-              d="m18.988 2.012 3 3L19.701 7.3l-3-3zM8 16h3l7.287-7.287-3-3L8 13z"
+              d="m21.743 12.331-9-10c-.379-.422-1.107-.422-1.486 0l-9 10a.998.998 0 0 0-.17 1.076c.16.361.518.593.913.593h2v7a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-4h4v4a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-7h2a.998.998 0 0 0 .743-1.669z"
             ></path>
-            <path d="M19 19H8.158c-.026 0-.053.01-.079.01-.033 0-.066-.009-.1-.01H5V5h6.847l2-2H5c-1.103 0-2 .896-2 2v14c0 1.104.897 2 2 2h14a2 2 0 0 0 2-2v-8.668l-2 2V19z"></path>
           </svg>
-        </a>
-        <a href="/projects" className="px-2">
+        )}
+        {pathname !== "/posts" && (
+          <a href="/posts" className="px-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              className=" h-6 w-6"
+            >
+              <path
+                fill=" darkviolet"
+                d="m18.988 2.012 3 3L19.701 7.3l-3-3zM8 16h3l7.287-7.287-3-3L8 13z"
+              ></path>
+              <path d="M19 19H8.158c-.026 0-.053.01-.079.01-.033 0-.066-.009-.1-.01H5V5h6.847l2-2H5c-1.103 0-2 .896-2 2v14c0 1.104.897 2 2 2h14a2 2 0 0 0 2-2v-8.668l-2 2V19z"></path>
+            </svg>
+          </a>
+        )}
+        <a href="/#projects" className="px-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"

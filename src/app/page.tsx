@@ -9,7 +9,7 @@ import Contact from "../components/Contact";
 
 export default function Home() {
   return (
-    <div className=" bg-violet-300 text-black h-screen snap-y  ease-out snap-mandatory  overflow-y-scroll z-0">
+    <div className=" bg-violet-300 text-black h-screen snap-y  ease-out snap-mandatory  overflow-y-scroll z-0 scrollbar scrollbar-track-violet-500/20 scrollbar-thumb-violet-800/80">
       {/*Navbar*/}
       <Navbar />
 
@@ -38,7 +38,7 @@ export default function Home() {
         <Blogs />
       </section>
       {/*contact*/}
-      <section id="projects" className="snap-start">
+      <section id="projects" className="contact snap-start">
         <Contact />
       </section>
       {/*footer*/}

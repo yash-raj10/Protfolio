@@ -1,11 +1,11 @@
 import Image from "next/image";
-import Navbar from "./components/Navbar";
-import Header from "./components/Header";
-import About from "./components/About";
-import Tools from "./components/Tools";
-import Projects from "./components/Projects";
-import Blogs from "./components/Blogs";
-import Contact from "./components/Contact";
+import Navbar from "../components/Navbar";
+import Header from "../components/Header";
+import About from "../components/About";
+import Tools from "../components/Tools";
+import Projects from "../components/Projects";
+import Blogs from "../components/Blogs";
+import Contact from "../components/Contact";
 
 export default function Home() {
   return (

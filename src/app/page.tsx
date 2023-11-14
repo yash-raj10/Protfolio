@@ -7,7 +7,7 @@ import Projects from "../components/Projects";
 import Blogs from "../components/Blogs";
 import Contact from "../components/Contact";
 
-export default function Home() {
+export default async function Home() {
   return (
     <div className=" bg-violet-300 text-black h-screen snap-y  ease-out snap-mandatory  overflow-y-scroll z-0 scrollbar scrollbar-track-violet-500/20 scrollbar-thumb-violet-800/80">
       {/*Navbar*/}

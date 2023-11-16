@@ -24,10 +24,10 @@ export default function Header({}: Props) {
           </p>
         </h1>
         <div className="hidden lg:flex md:flex justify-center">
-          <button className="border-2  px-4 mx-2 py-1 rounded-lg border-violet-500 bg-violet-800 text-lg \ text-white ">
+          <button className="border-2  px-4 mx-2 py-1 rounded-lg border-violet-400 bg-violet-700 text-lg \ text-white ">
             PROJECTS
           </button>
-          <button className="border-2 px-4 py-1 mx-2 bg-violet-800 border-violet-500  rounded-lg text-lg  text-white">
+          <button className="border-2 px-4 py-1 mx-2 bg-violet-700 border-violet-400  rounded-lg text-lg  text-white">
             BLOGS
           </button>
         </div>

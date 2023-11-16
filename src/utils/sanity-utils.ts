@@ -10,3 +10,12 @@ export async function getSkills() {
 
   return data;
 }
+
+export async function getPosts() {
+  const data = await client.fetch(groq`*[_type=="post"]{
+        ...,
+        "mainImage":mainImage.asset->url,
+    }`);
+
+  return data;
+}

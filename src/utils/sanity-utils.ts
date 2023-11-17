@@ -19,3 +19,13 @@ export async function getPosts() {
 
   return data;
 }
+
+export async function getProjects() {
+  const data = await client.fetch(groq`*[_type=="project"]{
+        ...,
+        "mainImage":mainImage.asset->url,
+        name,
+    }`);
+
+  return data;
+}

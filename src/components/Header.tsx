@@ -24,12 +24,17 @@ export default function Header({}: Props) {
           </p>
         </h1>
         <div className="hidden lg:flex md:flex justify-center">
-          <button className="border-2  px-4 mx-2 py-1 rounded-lg border-violet-400 bg-violet-700 text-lg \ text-white ">
-            PROJECTS
-          </button>
-          <button className="border-2 px-4 py-1 mx-2 bg-violet-700 border-violet-400  rounded-lg text-lg  text-white">
-            BLOGS
-          </button>
+          <a href="#projects">
+            <button className="border-2 shadow-gray-300  px-4 mx-2 py-1 rounded-lg border-violet-400 bg-violet-700 text-lg  text-white  hover:scale-105 duration-500">
+              PROJECTS
+            </button>
+          </a>
+
+          <a href="#blogs">
+            <button className="border-2 shadow-gray-300  px-4 py-1 mx-2 bg-violet-700 border-violet-400  rounded-lg text-lg  text-white hover:scale-105 duration-500">
+              BLOGS
+            </button>
+          </a>
         </div>
       </div>
 
@@ -48,14 +53,18 @@ export default function Header({}: Props) {
           />
         </motion.div>
         <div className="flex lg:hidden md:hidden mt-6 justify-center">
-          <button className="border-2  px-3 mx-2 rounded-lg border-violet-500 bg-violet-400 text-lg  text-gray-600 ">
-            PROJECTS
-          </button>
-          <button className="border-2 px-3 mx-2 border-violet-500 bg-violet-400 rounded-lg text-lg  text-gray-600">
-            BLOGS
-          </button>
-        </div>
+          <a href="#projects">
+            <button className=" shadow-gray-300  border-2 px-3 mx-2 border-violet-500 bg-violet-400 rounded-lg text-lg text-gray-600">
+              PROJECTS
+            </button>
+          </a>
 
+          <a href="#blogs">
+            <button className=" shadow-gray-300  border-2 px-3 mx-2 border-violet-500 bg-violet-400 rounded-lg text-lg text-gray-600">
+              BLOGS
+            </button>
+          </a>
+        </div>
         <div className=" space-x-4 pt-6 text-gray-700 sm:space-x-12  ">
           <Link
             href="#about"

@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import Blog from "./Blog";
 import { getPosts } from "@/utils/sanity-utils";

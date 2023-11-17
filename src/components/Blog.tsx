@@ -8,7 +8,7 @@ type Props = {
 
 export default function Blog({ props }: Props) {
   return (
-    <div className="flex justify-between items-center border-2 border-gray-400 px-2 py-1 bg-violet-200 rounded-lg w-full">
+    <div className="flex justify-between items-center border-2 gap-2 border-gray-400 px-2 py-1 bg-violet-200 rounded-lg w-full">
       <a href="/posts">
         <p className="text-violet-800 cursor-pointer font-bold hover:text-black">
           {props.title}

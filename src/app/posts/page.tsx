@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import Navbar from "@/components/Navbar";
 import Post from "@/components/Post";

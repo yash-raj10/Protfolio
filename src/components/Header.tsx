@@ -9,19 +9,19 @@ import Image from "next/image";
 type Props = {};
 
 export default function Header({}: Props) {
-  const [text, count] = useTypewriter({
-    words: ["Developer!", "Freelancer.", "Tech-Blogger.", "Potter-Head🪄"],
-    loop: true,
-    delaySpeed: 1000,
-  });
+  // const [text, count] = useTypewriter({
+  //   words: ["Developer!", "Freelancer.", "Tech-Blogger.", "Potter-Head🪄"],
+  //   loop: true,
+  //   delaySpeed: 1000,
+  // });
   return (
     <div className="h-screen flex space-y-6 flex-col lg:flex-row md:flex-row justify-center items-center lg:space-x-24 md:space-x-16 overflow-hidden text-center">
       <div className="space-y-8">
         <h1 className="text-xl lg:text-6xl md:text-6xl">
           Hey, I Am YA.sh
           <p>
-            <span className=" text-violet-700">{text}</span>
-            <Cursor cursorColor="darkviolet" />
+            {/* <span className=" text-violet-700">{text}</span> */}
+            {/* <Cursor cursorColor="darkviolet" /> */}
           </p>
         </h1>
         <div className="hidden lg:flex md:flex justify-center">

@@ -11,7 +11,7 @@ export default async function Tools({}: Props) {
   const getSkillData: Skill[] = await getSkills();
 
   return (
-    <motion.div className="  h-screen flex flex-col text-center items-center justify-center space-y-12">
+    <div className="  h-screen flex flex-col text-center items-center justify-center space-y-12">
       <h1 className=" text-violet-800 text-xl font-bold uppercase tracking-[2px] ">
         Tools I have worked with!
       </h1>
@@ -20,6 +20,6 @@ export default async function Tools({}: Props) {
           <Tool key={index} props={s} />
         ))}
       </div>
-    </motion.div>
+    </div>
   );
 }

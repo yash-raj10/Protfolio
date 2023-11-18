@@ -40,10 +40,10 @@ export default function Header({}: Props) {
       </div>
 
       <div className="flex flex-col justify-center items-center">
-        <motion.div
-          initial={{ x: +40, opacity: 0, scale: 1 }}
-          animate={{ x: 0, opacity: 1, scale: 1 }}
-          transition={{ duration: 1 }}
+        <div
+          // initial={{ x: +40, opacity: 0, scale: 1 }}
+          // animate={{ x: 0, opacity: 1, scale: 1 }}
+          // transition={{ duration: 1 }}
           className=" h-56 w-52 bg-violet-600 rounded-3xl shadow-lg shadow-violet-500 flex items-center justify-center"
         >
           <Image
@@ -52,7 +52,7 @@ export default function Header({}: Props) {
             width={175}
             className=" rounded-3xl  hover:scale-105 duration-300"
           />
-        </motion.div>
+        </div>
         <div className="flex lg:hidden md:hidden mt-6 justify-center">
           <a href="#projects">
             <button className=" shadow-gray-300  border-2 px-3 mx-2 border-violet-500 bg-violet-400 rounded-lg text-lg text-gray-600">

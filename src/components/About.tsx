@@ -26,8 +26,8 @@ export default function About({}: Props) {
       >
         Hey there! I am Yash a Full Stack Dev from India, an avid technology
         enthusiast, always fascinated by the latest advancements in the tech
-        world. Currently Learning Cloud and Devops. I'm also the Outreach Lead
-        at @GdscBpit and a proud contributor to @rustDelhi & @FOSSDelhi
+        world. Currently Learning Cloud and Devops. I&apos;m also the Outreach
+        Lead at @GdscBpit and a proud contributor to @rustDelhi & @FOSSDelhi
         Communities.
       </motion.div>
     </div>

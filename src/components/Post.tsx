@@ -3,6 +3,7 @@ import { PortableText } from "@portabletext/react";
 import { BlogPost } from "@/app/types/BlogPost";
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
 
 type Props = {
   props: BlogPost;

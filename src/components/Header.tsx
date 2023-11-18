@@ -3,7 +3,8 @@ import React from "react";
 import Link from "next/link";
 import { Cursor, Typewriter, useTypewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
-import Yash from "next/image";
+import yash from "../../public/yash.jpg";
+import Image from "next/image";
 
 type Props = {};
 
@@ -45,8 +46,8 @@ export default function Header({}: Props) {
           transition={{ duration: 1 }}
           className=" h-56 w-52 bg-violet-600 rounded-3xl shadow-lg shadow-violet-500 flex items-center justify-center"
         >
-          <img
-            src="/yash.jpg"
+          <Image
+            src={yash}
             alt="Yash"
             width={175}
             className=" rounded-3xl  hover:scale-105 duration-300"

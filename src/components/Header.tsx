@@ -9,19 +9,19 @@ import Image from "next/image";
 type Props = {};
 
 export default function Header({}: Props) {
-  // const [text, count] = useTypewriter({
-  //   words: ["Developer!", "Freelancer.", "Tech-Blogger.", "Potter-Head🪄"],
-  //   loop: true,
-  //   delaySpeed: 1000,
-  // });
+  const [text, count] = useTypewriter({
+    words: ["Developer!", "Freelancer.", "Tech-Blogger.", "Potter-Head🪄"],
+    loop: true,
+    delaySpeed: 1000,
+  });
   return (
     <div className="h-screen flex space-y-6 flex-col lg:flex-row md:flex-row justify-center items-center lg:space-x-24 md:space-x-16 overflow-hidden text-center">
       <div className="space-y-8">
         <h1 className="text-xl lg:text-6xl md:text-6xl">
           Hey, I Am YA.sh
           <p>
-            {/* <span className=" text-violet-700">{text}</span> */}
-            {/* <Cursor cursorColor="darkviolet" /> */}
+            <span className=" text-violet-700">{text}</span>
+            <Cursor cursorColor="darkviolet" />
           </p>
         </h1>
         <div className="hidden lg:flex md:flex justify-center">
@@ -40,10 +40,10 @@ export default function Header({}: Props) {
       </div>
 
       <div className="flex flex-col justify-center items-center">
-        <motion.div
-          initial={{ x: +40, opacity: 0, scale: 1 }}
-          animate={{ x: 0, opacity: 1, scale: 1 }}
-          transition={{ duration: 1 }}
+        <div
+          // initial={{ x: +40, opacity: 0, scale: 1 }}
+          // animate={{ x: 0, opacity: 1, scale: 1 }}
+          // transition={{ duration: 1 }}
           className=" h-56 w-52 bg-violet-600 rounded-3xl shadow-lg shadow-violet-500 flex items-center justify-center"
         >
           <Image
@@ -52,7 +52,7 @@ export default function Header({}: Props) {
             width={175}
             className=" rounded-3xl  hover:scale-105 duration-300"
           />
-        </motion.div>
+        </div>
         <div className="flex lg:hidden md:hidden mt-6 justify-center">
           <a href="#projects">
             <button className=" shadow-gray-300  border-2 px-3 mx-2 border-violet-500 bg-violet-400 rounded-lg text-lg text-gray-600">

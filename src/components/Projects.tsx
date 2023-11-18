@@ -1,6 +1,8 @@
+"use client";
 import React from "react";
 import { getProjects } from "@/utils/sanity-utils";
 import { ProjectPost } from "@/app/types/ProjectPost";
+import Image from "next/image";
 
 type Props = {};
 
@@ -16,11 +18,12 @@ export default async function Projects({}: Props) {
             className="w-screen  flex-shrink-0 snap-center flex items-center justify-center h-screen"
           >
             <div className=" border-4 max-w-7xl border-gray-700 rounded-xl bg-violet-200 flex flex-col items-center justify-center space-y-8 mx-5 p-8 md:p-28">
-              <img
+              <Image
                 className="border-4 border-gray-700 rounded-xl"
                 src={p.mainImage}
                 alt=""
                 width={400}
+                height={400}
               />
               <div className=" flex flex-raw space-x-6 max-w-6xl">
                 <h3 className="lg:text-3xl md:text-3xl text-2xl text-center uppercase">
